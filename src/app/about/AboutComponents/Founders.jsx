@@ -1,6 +1,6 @@
 import Tilt from 'react-parallax-tilt';
 import { AiFillLinkedin } from 'react-icons/ai'
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
