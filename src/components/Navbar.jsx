@@ -1,17 +1,17 @@
 
 'use client';
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 
 const Navbar = () => {
 
-    const router = useRouter();
-    console.log(router.pathname)
+    // const router = useRouter();
+    // console.log(router.pathname)
 
     const allLinks = <>
-        <li className={router.pathname === '/' ? 'active text-sky-500' : ''} ><Link href="/" className="" >Home</Link></li>
-        <li className={router.pathname === '/about' ? 'active text-sky-500' : ''} ><Link href="/about" className="" >About Us</Link></li>
+        <li ><Link href="/" className="" >Home</Link></li>
+        <li ><Link href="/about" className="" >About Us</Link></li>
         <li><Link href={``} className="" >Partner With Us</Link></li>
         <li><Link href={``} className="" >Blog</Link></li>
         <li className="bg-sky-600 text-white rounded-xl" ><Link href={``} className="">Download ZET</Link></li>
