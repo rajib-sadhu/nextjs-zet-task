@@ -1,3 +1,4 @@
+'use client'
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -13,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  'use client'
+
 
   return (
     <html data-theme="cupcake" lang="en">
