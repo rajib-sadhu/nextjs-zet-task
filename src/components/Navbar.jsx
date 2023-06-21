@@ -1,13 +1,21 @@
 
 'use client';
 import Link from "next/link";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 
 const Navbar = () => {
 
-    // const router = useRouter();
-    // console.log(router.pathname)
+    const router = useRouter();
+    console.log(router.pathname)
+
+    useEffect(() => {
+        if (router && typeof window !== 'undefined') {
+          // Browser code
+          console.log('This code is running in the browser.');
+        }
+      }, [router]);
 
     const allLinks = <>
         <li ><Link href="/" className="" >Home</Link></li>
